@@ -1,0 +1,35 @@
+{{>header}}
+
+
+<div class="RoomBorder">
+  <table border="1">
+    <thead>
+      <tr>
+        <th>S.No</th>
+        <th>Hospital Name</th>
+        <th>Email</th>
+        <th>Address</th>
+        <th>Contact Number</th>
+        <th>City</th>
+        <th>State</th>
+        <th>Pincode</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each x}}
+        <tr>
+            <td>{{x}}</td>
+          <td>{{this.hospitalName}}</td>
+          <td>{{this.email}}</td>
+          <td>{{this.address}}</td>
+          <td>{{this.phoneNumber}}</td>
+          <td>{{this.city}}</td>
+          <td>{{this.state}}</td>
+          <td>{{this.pincode}}</td>
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+  </div>
+</body>
+</html>

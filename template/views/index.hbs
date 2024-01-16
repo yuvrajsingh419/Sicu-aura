@@ -1,0 +1,76 @@
+{{>header}}
+<body>
+    <div class="container">
+        <div class="image-section">
+            {{!-- <img src="logo.jpeg" alt="Hospital Image" class="image"> --}}
+        </div>
+        <div class="form-section">
+            <form action="/register" method="post" id="registrationForm" class="form-section">
+            <div class="form-subsection">
+                <h2>Registration Page</h2>
+                
+                <div class="form-group">
+                    <label for="hospitalName">Hospital Name:</label>
+                    <input type="text" id="hospitalName" name="hospitalName" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" name="address" required>
+                </div>
+                <div class="form-group">
+                    <label for="city">City:</label>
+                    <input type="text" id="city" name="city" required>
+                </div>
+                <div class="form-group">
+                    <label for="state">State:</label>
+                    <input type="text" id="state" name="state" required>
+                </div>
+                <div class="form-group">
+                    <label for="pincode">Pincode:</label>
+                    <input type="text" id="pincode" name="pincode" required>
+                </div>
+                <div class="form-group">
+                    <label for="regDate">Hospital Registration Date:</label>
+                    <input type="date" id="regDate" name="regDate" required>
+                </div>
+                <div class="form-group">
+                    <label for="ambulanceCount">Number of Ambulance Available:</label>
+                    <input type="number" id="ambulanceCount" name="ambulanceCount" required>
+                </div>
+            </div>
+            <div class="form-subsection">
+                <h2><a href="/login">Already Registered</a></h2>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phoneNumber">Phone Number:</label>
+                    <input type="tel" id="phoneNumber" name="phoneNumber" required>
+                </div>
+                <div class="form-group">
+                    <label for="regNumber">Hospital Registration Number:</label>
+                    <input type="text" id="regNumber" name="regNumber" required>
+                </div>
+                <div class="form-group">
+                    <label for="emergencyWardNumber">Emergency Ward Number:</label>
+                    <input type="text" id="emergencyWardNumber" name="emergencyWardNumber" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Create Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password:</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required>
+                </div>
+                <input type="submit" class="reg" value="Register">
+                {{!-- <div class="form-actions">
+                    <button type="submit">Register</button>
+                </div> --}}
+            </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

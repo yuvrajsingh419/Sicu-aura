@@ -1,0 +1,31 @@
+{{>header}}
+<body>
+    <div class="container">
+        <div class="image-section">
+            {{!-- <img src="logo.jpeg" alt="Hospital Image" class="image"> --}}
+        </div>
+        
+        <div class="login-section">
+            <form action="/login" method="post">
+            <div class="login-heading">
+                <p>Welcome to Sicu-Aura</p>
+            </div>
+            <div class="form-group">
+                <label for="hospitalName">Hospital Name:</label>
+                <input type="text" id="hospitalName" name="hospitalName" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit" class="form-group">Login</button>
+            </form>
+        </div>
+        
+    </div>
+</body>
+</html>
